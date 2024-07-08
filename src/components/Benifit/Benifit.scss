@@ -1,0 +1,33 @@
+@use '../../styles//partials/mixins' as *;
+
+.why-choose-us{
+    height: 600px;
+}
+.benifit-title{
+    @include heading-2;
+    text-align: center;
+}
+.benifit-container{
+    width: 100%;
+    height: 288px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.benifit-card{
+    width: 364px;
+    height: 288px;
+}
+.icon{
+    height: 100px;
+    text-align: center;
+}
+.card-title{
+    @include body-large;
+    text-align: center;
+    margin: 10px 0;
+}
+.card-description{
+    @include body-normal;
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+@use './styles/partials/typography' as *;
+@use './styles/global.scss' as *;
+*{
+    font-family: 'montserrat';
+    box-sizing: border-box;
+    //border: 1px solid red;
+}
+
+body{
+    margin: 0;
+}
+

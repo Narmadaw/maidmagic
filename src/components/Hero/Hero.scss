@@ -1,0 +1,80 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles//partials/variables' as *;
+
+.quote-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.hero-text{
+    margin: 1.5rem 0 2.5rem 0;
+}
+.main-text{
+    @include heading-1;
+}
+.lead-para{
+    @include lead-paragraph;
+}
+.left-pannel{
+    width: 50%;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+    padding: 1rem;
+}
+.text{
+    @include input-field;
+}
+.text-bedroom,
+.text-bathroom{
+    text-align: center;
+}
+.inner-text{
+    margin-bottom: 1rem;
+}
+.voucer-code{
+    color: $primary-color;
+    font-weight: 700;
+}
+.btn-submit{
+    @include button;
+}
+.inner-container{
+    width: 100%;
+    padding: 12px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Equal column widths */
+    grid-template-rows: auto;
+    gap: 12px;
+}
+.input-container{
+    position: relative;
+}
+.left-icon,
+.right-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 28px; /* Adjust the size of the icons */
+    width: 28px;
+}
+.left-icon {
+    left: 10px;
+}
+.right-icon {
+    right: 10px;
+}
+.review-pannel{
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+.review-image-pannel{
+    margin-top: 1rem;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.review-image{
+    height: 49.14px;
+    width: 100px;
+}

@@ -1,0 +1,10 @@
+@use './partials/mixins' as *;
+h1,h2,h3,h4, p{
+    margin: 0;
+}
+.section-title{
+    @include heading-2
+}
+.cta-btn{
+    @include button;
+}
